@@ -5,7 +5,7 @@ from PIL import Image
 
 def get_current_wallpapers_color():
     # todo - method which gets current system background
-    image = Image.open('/usr/share/backgrounds/joshua-coleman-something-yellow.jpg')
+    image = Image.open('src/firewatch.png')
     blur_image = image.filter(PIL.ImageFilter.GaussianBlur(100))
     width, height = image.size
 
