@@ -24,6 +24,7 @@ def get_current_wallpapers_color():
     g = round(g / ((width * height) / steps) * 100)
     b = round(b / ((width * height) / steps) * 100)
     response = str(r) + " " + str(g) + " " + str(b)
+
     return json.dumps({"RGB Color": [{"RGB": response}, {"R": r}, {"G": g}, {"B": b}],
                        'HEX': convert_rgb_to_hex(r, g, b)})
 
